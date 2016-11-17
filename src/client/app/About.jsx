@@ -7,6 +7,6 @@ const About = (props) => {
       <div className="bio"></div>
     </div>
     );
-}
+};
 
 export default About;

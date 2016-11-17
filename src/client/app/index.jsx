@@ -18,10 +18,16 @@ class App extends React.Component {
     this.toggleAbout = this.toggleAbout.bind(this);
     this.toggleProjects = this.toggleProjects.bind(this);
     this.toggleContact = this.toggleContact.bind(this);
+    this.toggleTitle = this.toggleTitle.bind(this);
+  }
+
+  toggleTitle() {
+    this.setState({
+      current: 0;
+      });
   }
 
   toggleResume() {
-    console.log(this.state.current, 'in toggleResume');
     this.setState({
       current: 1
     });
@@ -49,7 +55,7 @@ class App extends React.Component {
     console.log(this.state.current, 'what is current');
     return (
       <div className="container">
-        <div className="title">
+        <div className="title" onClick={this.toggleTitle}>
           <div className="headers">
             <h1>Wendy Cheung</h1>
             <h3>Software Engineer</h3>
