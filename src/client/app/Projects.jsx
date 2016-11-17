@@ -1,5 +1,13 @@
 import React from 'react';
 
-export default class Projects extends React.Component {
-  
+const Projects = (props) => {
+  return (
+    <div>
+      <div className="project"></div>
+      <div className="project"></div>
+      <div className="project"></div>
+    </div>
+    );
 }
+
+export default Projects;

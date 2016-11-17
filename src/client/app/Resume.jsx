@@ -1,5 +1,9 @@
 import React from 'react';
 
-export default class Resume extends React.Component {
-  
+const Resume = (props) => {
+  return (
+    <div>in resume</div>
+    );
 }
+
+export default Resume;

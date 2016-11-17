@@ -1,5 +1,9 @@
 import React from 'react';
 
-export default class Contact extends React.Component {
-  
+const Contact = (props) => {
+  return (
+    <div>in Contact</div>
+    );
 }
+
+export default Contact;

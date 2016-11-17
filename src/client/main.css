@@ -1,13 +1,51 @@
 body {
+  font-family: sans-serif;
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
 }
 
+.title {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+h3 {
+  color: lightgray;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icon {
+  width: 50%;
+}
+
 .container {
   display: flex;
-  width: 800px;
-  height: 500px;
-  border: 2px solid black;
+  flex-direction: column;
+  width: 1000px;
+  height: 600px;
+}
+
+.selection-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.selection {
+  height: 25%;
+  width: 100%;
+  border: 1px solid black;
+  font-size: 55px;
+  font-weight: bold;
+  opacity: 50%;
+}
+
+.-resume {
+  
 }
