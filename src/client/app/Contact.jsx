@@ -2,7 +2,9 @@ import React from 'react';
 
 const Contact = (props) => {
   return (
-    <div>in Contact</div>
+    <div className="contact-container">
+
+    </div>
     );
 }
 

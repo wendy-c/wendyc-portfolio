@@ -23,8 +23,8 @@ class App extends React.Component {
 
   toggleTitle() {
     this.setState({
-      current: 0;
-      });
+      current: 0
+    });
   }
 
   toggleResume() {
@@ -58,28 +58,33 @@ class App extends React.Component {
         <div className="title" onClick={this.toggleTitle}>
           <div className="headers">
             <h1>Wendy Cheung</h1>
-            <h3>Software Engineer</h3>
+            <h3>Software Engineer | San Francisco Bay Area</h3>
           </div>
           <div className="social-icons">
+            <a href="http://www.linkedin.com/in/wendywcheung" target="_blank"><img className="icon" src={"../img/linkedin.png"}/></a>
+            <a href="https://github.com/wendy-c" target="_blank"><img className="icon" src={"../img/github.png"}/></a>
+            <a href="https://www.instagram.com/wendyc___/?ref=badge" target="_blank"><img className="icon" src={"../img/insta.png"}/></a>
           </div>
         </div>
-        <div className="selection-box">
-        <div className="selection -resume" onClick={this.toggleResume}>
+        <div className="background">
+        <div className="selection-box blocks">
+        <div className={this.state.current === 1 ? "selection -bk1 selection-hover" : "selection -bk1"} onClick={this.toggleResume}>
           Resume
         </div>
         {this.state.current === 1 ? <Resume /> : null}
-        <div className="selection -about" onClick={this.toggleAbout}>
+        <div className={this.state.current === 2 ? "selection -bk2 selection-hover" : "selection -bk2"} onClick={this.toggleAbout}>
           About
         </div>
         {this.state.current === 2 ? <About /> : null}
-        <div className="selection -projects" onClick={this.toggleProjects}>
+        <div className={this.state.current === 3 ? "selection -bk3 selection-hover" : "selection -bk3"} onClick={this.toggleProjects}>
           Projects
         </div>
         {this.state.current === 3 ? <Projects /> : null}
-        <div className="selection -contact" onClick={this.toggleContact}>
+        <div className={this.state.current === 4 ? "selection -bk4 selection-hover" : "selection -bk4"} onClick={this.toggleContact}>
           Contact
         </div>
         {this.state.current === 4 ? <Contact /> : null}
+        </div>
         </div>
       </div> 
       );
