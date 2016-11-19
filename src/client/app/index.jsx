@@ -30,16 +30,16 @@ class App extends React.Component {
       return (
         <div className="selection-box">
           <div className={this.state.current === 1 ? "selection -bk1 selection-hover" : "selection -bk1"} onClick={() => this.toggleCurrent(1)}>
-            ABOUT
+            <span>ABOUT</span>
           </div>
           <div className={this.state.current === 2 ? "selection -bk2 selection-hover" : "selection -bk2"} onClick={() => this.toggleCurrent(2)}>
-            RESUME
+            <span>RESUME</span>
           </div>
           <div className={this.state.current === 3 ? "selection -bk3 selection-hover" : "selection -bk3"} onClick={() => this.toggleCurrent(3)}>
-            PROJECTS
+            <span>PROJECTS</span>
           </div>
           <div className={this.state.current === 4 ? "selection -bk4 selection-hover" : "selection -bk4"} onClick={() => this.toggleCurrent(4)}>
-            CONTACT
+            <span>CONTACT</span>
           </div>
         </div>
         );

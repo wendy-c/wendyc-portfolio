@@ -1,9 +1,8 @@
 body {
+  position: fixed;
+  left: 100px;
+  top: 60px;
   font-family: sans-serif;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
   font-size: 16px;
 }
 
@@ -24,8 +23,9 @@ p {
   align-content: space-between;
   align-items: center;
   width: 100%;
-  height: 100px;
+  height: 85px;
   margin-bottom: 10px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 h1 {
@@ -66,6 +66,7 @@ h3 {
   align-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .selection {
@@ -77,6 +78,7 @@ h3 {
   font-weight: bold;
   color: #062a66;
   background-color: #f4f7fc;
+  border-radius: 5px;
 }
 
 .selection:hover {
@@ -95,9 +97,19 @@ h3 {
   box-shadow: 2px 2px 1px #dcdfe5;
 }
 
+.-bk1 span {
+  margin: 5px;
+}
+
 .-bk2 {
   width: 570px;
   box-shadow: 2px 2px 1px #dcdfe5;
+}
+
+.-bk2 span {
+  position: absolute;
+  top: 160px;
+  right: 10px;
 }
 
 .-bk3 {
@@ -106,23 +118,88 @@ h3 {
   box-shadow: 2px 2px 1px #dcdfe5;
 }
 
+.-bk3 span {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+}
+
 .-bk4 {
   width: 190px;
   box-shadow: 2px 2px 1px #dcdfe5;
+}
+
+.-bk4 span {
+  margin: 5px;
 }
 
 .sub-head {
 
 }
 
+.detail-view {
+  width: 100%;
+}
+
+.side-menu {
+  width: 60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+/*  border: 3px solid #062a66;
+  border-radius: 5px;*/
+  font-size: 38px;
+  color: #062a66;
+  float: left;
+  clear: left;
+}
+
+.main-body {
+  width: 700px;
+  margin-left: 20px;
+  float: right;
+  clear: right;
+}
+
+.menu-btn {
+  margin: 5px;
+  border: 3px solid #062a66;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: #f4f7fc;
+}
+
+.menu-btn:hover span {
+  display:none;
+}
+
+.menu-btn:hover:after {
+  position: absolute;
+  left:0;
+  border: 3px solid #062a66;
+  border-radius: 50px;
+  padding: 10px;
+  height: 40px;
+  z-index: 5;
+  background-color: #f4f7fc;
+  content: attr(data-hover);
+}
+
 .resume-body {
   width: 60%;
   float: left;
+  clear: left;
 }
 
 .resume-side {
   width: 40%;
   float: right;
+  clear: right;
 }
 
 .skills {
@@ -165,7 +242,7 @@ h3 {
 }
 
 .contact-container {
-  margin: 10px;
+  margin: 50px;
   margin-bottom: 50px;
   height: 150px;
   display: flex;
@@ -177,4 +254,10 @@ h3 {
 
 .contact-icons {
 
+}
+
+.projects p1{
+  width: 200px;
+  background-image: url("./img/squirrel-screenshot.png");
+  background-size: cover;
 }

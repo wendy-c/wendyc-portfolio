@@ -8,7 +8,8 @@ class DetailView extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      menu: null
+      menu: null,
+      about: 'A',
     };
     this.getView = this.getView.bind(this);
     this.checkProps = this.checkProps.bind(this);
@@ -52,13 +53,14 @@ class DetailView extends React.Component {
 
   render() {
     const view = this.getView();
+    console.log(this.state.about);
     return (
       <div className="detail-view">
         <div className="side-menu">
-          <div className="menu-btn" data-hover="ABOUT" onClick={() => this.toggleMenu(1)}>A</div>
-          <div className="menu-btn" data-hover="RESUME" onClick={() => this.toggleMenu(2)}>R</div>
-          <div className="menu-btn" data-hover="PROJECTS" onClick={() => this.toggleMenu(3)}>P</div>
-          <div className="menu-btn" data-hover="CONTACT" onClick={() => this.toggleMenu(4)}>C</div>
+          <div className="menu-btn" data-hover="ABOUT" onClick={() => this.toggleMenu(1)}><span>A</span></div>
+          <div className="menu-btn" data-hover="RESUME" onClick={() => this.toggleMenu(2)}><span>R</span></div>
+          <div className="menu-btn" data-hover="PROJECTS" onClick={() => this.toggleMenu(3)}><span>P</span></div>
+          <div className="menu-btn" data-hover="CONTACT" onClick={() => this.toggleMenu(4)}><span>C</span></div>
         </div>
         <div className="main-body">
           {view}
