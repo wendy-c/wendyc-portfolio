@@ -4,7 +4,7 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 p {
@@ -29,7 +29,7 @@ p {
 }
 
 h1 {
-  color: #ff6699;
+  color: #062a66;
   margin-bottom: 0px;
 }
 
@@ -59,62 +59,56 @@ h3 {
 
 .selection-box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 100%;
+  height: 420px;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .selection {
-  height: 20%;
-  width: 100%;
-  padding: 10px;
+  height: 190px;
+  margin-bottom: 20px;
   display: flex;
-  justify-content: flex-start;
-  align-content: center;
-  font-size: 50px;
+  font-size: 30px;
+  padding: 5px;
   font-weight: bold;
-  opacity: 50%;
-  color: gray;
+  color: #062a66;
+  background-color: #f4f7fc;
 }
 
 .selection:hover {
-  width: 95%;
-  align-self: center;
-  margin: 5px 10px 5px 10px;
-  border: 1px solid #d9d9d9;
-  border-radius: 25px;
-  color: #fff;
+  color: #f4f7fc;
+  background-color: #062a66;
 }
 
 .selection-hover {
-  width: 95%;
-  align-self: center;
-  margin: 5px 10px 5px 10px;
-  border: 1px solid #d9d9d9;
-  border-radius: 25px;
-  color: #fff;
+  color: #f4f7fc;
+  background-color: #062a66;
 }
 
 .-bk1 {
-  height: 113px;
-  background-image: url(img/bk-1.png);
-  background-size: cover;
+  width: 190px;
+  margin-right: 20px;
+  box-shadow: 2px 2px 1px #dcdfe5;
 }
 
 .-bk2 {
-  height: 113px;
-  background-image: url(img/bk-2.png);
-  background-size: cover;
+  width: 570px;
+  box-shadow: 2px 2px 1px #dcdfe5;
 }
 
 .-bk3 {
-  height: 113px;
-  background-image: url(img/bk-3.png);
-  background-size: cover;
+  width: 570px;
+  margin-right: 20px;
+  box-shadow: 2px 2px 1px #dcdfe5;
 }
 
 .-bk4 {
-  height: 113px;
-  background-image: url(img/bk-4.png);
-  background-size: cover;
+  width: 190px;
+  box-shadow: 2px 2px 1px #dcdfe5;
 }
 
 .sub-head {
@@ -168,4 +162,19 @@ h3 {
   width: 50%;
   float: right;
   clear: right;
+}
+
+.contact-container {
+  margin: 10px;
+  margin-bottom: 50px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-icons {
+
 }

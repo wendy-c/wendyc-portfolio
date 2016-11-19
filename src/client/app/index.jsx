@@ -61,30 +61,28 @@ class App extends React.Component {
             <h3>Software Engineer | San Francisco Bay Area</h3>
           </div>
           <div className="social-icons">
-            <a href="http://www.linkedin.com/in/wendywcheung" target="_blank"><img className="icon" src={"../img/linkedin.png"}/></a>
-            <a href="https://github.com/wendy-c" target="_blank"><img className="icon" src={"../img/github.png"}/></a>
-            <a href="https://www.instagram.com/wendyc___/?ref=badge" target="_blank"><img className="icon" src={"../img/insta.png"}/></a>
+            <a href="http://www.linkedin.com/in/wendywcheung" target="_blank"><img className="icon" src={"../img/linkedin-gray.png"}/></a>
+            <a href="https://github.com/wendy-c" target="_blank"><img className="icon" src={"../img/github-gray.png"}/></a>
+            <a href="https://www.instagram.com/wendyc___/?ref=badge" target="_blank"><img className="icon" src={"../img/insta-gray.png"}/></a>
           </div>
         </div>
-        <div className="background">
-        <div className="selection-box blocks">
+        <div className="selection-box">
         <div className={this.state.current === 1 ? "selection -bk1 selection-hover" : "selection -bk1"} onClick={this.toggleResume}>
-          Resume
+          ABOUT
         </div>
         {this.state.current === 1 ? <Resume /> : null}
         <div className={this.state.current === 2 ? "selection -bk2 selection-hover" : "selection -bk2"} onClick={this.toggleAbout}>
-          About
+          RESUME
         </div>
         {this.state.current === 2 ? <About /> : null}
         <div className={this.state.current === 3 ? "selection -bk3 selection-hover" : "selection -bk3"} onClick={this.toggleProjects}>
-          Projects
+          PROJECTS
         </div>
         {this.state.current === 3 ? <Projects /> : null}
         <div className={this.state.current === 4 ? "selection -bk4 selection-hover" : "selection -bk4"} onClick={this.toggleContact}>
-          Contact
+          CONTACT
         </div>
         {this.state.current === 4 ? <Contact /> : null}
-        </div>
         </div>
       </div> 
       );
