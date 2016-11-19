@@ -13,6 +13,6 @@ const Contact = (props) => {
       </div>
     </div>
     );
-}
+};
 
 export default Contact;

@@ -5,6 +5,7 @@ import About from './About.jsx';
 import Resume from './Resume.jsx';
 import Projects from './Projects.jsx';
 import Contact from './Contact.jsx';
+import DetailView from './DetailView.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -14,48 +15,47 @@ class App extends React.Component {
       current: 0
     };
 
-    this.toggleResume = this.toggleResume.bind(this);
-    this.toggleAbout = this.toggleAbout.bind(this);
-    this.toggleProjects = this.toggleProjects.bind(this);
-    this.toggleContact = this.toggleContact.bind(this);
-    this.toggleTitle = this.toggleTitle.bind(this);
+    this.toggleCurrent = this.toggleCurrent.bind(this);
+    this.checkView = this.checkView.bind(this);
   }
 
-  toggleTitle() {
+  toggleCurrent(value) {
     this.setState({
-      current: 0
+      current: value
     });
   }
 
-  toggleResume() {
-    this.setState({
-      current: 1
-    });
-  }
-
-  toggleAbout() {
-    this.setState({
-      current: 2
-    });
-  }
-
-  toggleProjects() {
-    this.setState({
-      current: 3
-    });
-  }
-
-  toggleContact() {
-    this.setState({
-      current: 4
-    });
+  checkView() {
+    if (this.state.current === 0) {
+      return (
+        <div className="selection-box">
+          <div className={this.state.current === 1 ? "selection -bk1 selection-hover" : "selection -bk1"} onClick={() => this.toggleCurrent(1)}>
+            ABOUT
+          </div>
+          <div className={this.state.current === 2 ? "selection -bk2 selection-hover" : "selection -bk2"} onClick={() => this.toggleCurrent(2)}>
+            RESUME
+          </div>
+          <div className={this.state.current === 3 ? "selection -bk3 selection-hover" : "selection -bk3"} onClick={() => this.toggleCurrent(3)}>
+            PROJECTS
+          </div>
+          <div className={this.state.current === 4 ? "selection -bk4 selection-hover" : "selection -bk4"} onClick={() => this.toggleCurrent(4)}>
+            CONTACT
+          </div>
+        </div>
+        );
+    } else {
+      return (
+        <DetailView current={this.state.current}/>
+        );
+    }
   }
 
   render () {
-    console.log(this.state.current, 'what is current');
+    const puzzleView = this.checkView();
+
     return (
       <div className="container">
-        <div className="title" onClick={this.toggleTitle}>
+        <div className="title" onClick={() => this.toggleCurrent(0)}>
           <div className="headers">
             <h1>Wendy Cheung</h1>
             <h3>Software Engineer | San Francisco Bay Area</h3>
@@ -66,24 +66,7 @@ class App extends React.Component {
             <a href="https://www.instagram.com/wendyc___/?ref=badge" target="_blank"><img className="icon" src={"../img/insta-gray.png"}/></a>
           </div>
         </div>
-        <div className="selection-box">
-        <div className={this.state.current === 1 ? "selection -bk1 selection-hover" : "selection -bk1"} onClick={this.toggleResume}>
-          ABOUT
-        </div>
-        {this.state.current === 1 ? <Resume /> : null}
-        <div className={this.state.current === 2 ? "selection -bk2 selection-hover" : "selection -bk2"} onClick={this.toggleAbout}>
-          RESUME
-        </div>
-        {this.state.current === 2 ? <About /> : null}
-        <div className={this.state.current === 3 ? "selection -bk3 selection-hover" : "selection -bk3"} onClick={this.toggleProjects}>
-          PROJECTS
-        </div>
-        {this.state.current === 3 ? <Projects /> : null}
-        <div className={this.state.current === 4 ? "selection -bk4 selection-hover" : "selection -bk4"} onClick={this.toggleContact}>
-          CONTACT
-        </div>
-        {this.state.current === 4 ? <Contact /> : null}
-        </div>
+        {puzzleView}
       </div> 
       );
   }
