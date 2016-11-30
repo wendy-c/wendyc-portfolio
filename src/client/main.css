@@ -16,6 +16,10 @@ p {
   width: 800px;
 }
 
+.empty {
+  height: 100px;
+}
+
 .title {
   display: flex;
   flex-direction: row;
@@ -29,7 +33,7 @@ p {
 }
 
 h1 {
-  color: #062a66;
+  color: #375484;
   margin-bottom: 0px;
 }
 
@@ -77,13 +81,17 @@ h3 {
   padding: 5px;
   font-weight: bold;
   color: #062a66;
-  background-color: #f4f7fc;
+  /*background-color: #f4f7fc;*/
+  background-image: url(img/ethnic-bk.jpg);
+  /*background-size: cover;*/
   border-radius: 5px;
+  opacity: 0.6;
 }
 
 .selection:hover {
   color: #f4f7fc;
   background-color: #062a66;
+  opacity: 1.0;
 }
 
 .selection-hover {
@@ -101,9 +109,15 @@ h3 {
   margin: 5px;
 }
 
+.-bk1:hover {
+  background-image: url(img/about.jpg);
+  background-size: cover;
+}
+
 .-bk2 {
   width: 570px;
   box-shadow: 2px 2px 1px #dcdfe5;
+  background-position: -29px 0px;
 }
 
 .-bk2 span {
@@ -112,10 +126,17 @@ h3 {
   right: 10px;
 }
 
+.-bk2:hover {
+  background-image: url(img/resume.jpg);
+  background-size: cover;
+  background-position: left top;
+}
+
 .-bk3 {
   width: 570px;
   margin-right: 20px;
   box-shadow: 2px 2px 1px #dcdfe5;
+  background-position: 0px 280px;
 }
 
 .-bk3 span {
@@ -124,13 +145,26 @@ h3 {
   bottom: 5px;
 }
 
+.-bk3:hover {
+  background-image: url(img/projects.jpg);
+  background-size: cover;
+  background-position: left top;
+}
+
 .-bk4 {
   width: 190px;
   box-shadow: 2px 2px 1px #dcdfe5;
+  background-position: -29px 280px;
 }
 
 .-bk4 span {
   margin: 5px;
+}
+
+.-bk4:hover {
+  background-image: url(img/contact.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .sub-head {
@@ -149,7 +183,7 @@ h3 {
 /*  border: 3px solid #062a66;
   border-radius: 5px;*/
   font-size: 38px;
-  color: #062a66;
+  color: #375484;
   float: left;
   clear: left;
 }
@@ -163,7 +197,7 @@ h3 {
 
 .menu-btn {
   margin: 5px;
-  border: 3px solid #062a66;
+  border: 3px solid #375484;
   border-radius: 50px;
   width: 60px;
   height: 60px;
@@ -181,7 +215,7 @@ h3 {
 .menu-btn:hover:after {
   position: absolute;
   left:0;
-  border: 3px solid #062a66;
+  border: 3px solid #375484;
   border-radius: 50px;
   padding: 10px;
   height: 40px;
@@ -190,16 +224,57 @@ h3 {
   content: attr(data-hover);
 }
 
+.resume-container {
+  position: relative;
+}
+
 .resume-body {
-  width: 60%;
+  width: 380px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  bottom: 50px;
+}
+
+.ed-div {
+  width: 100%;
+  display: flex;
+}
+
+.-school {
+  flex: 5;
+}
+
+.-year {
+ flex: 1;
+ margin-top: 10px;
+ font-style: italic;
+}
+
+.-work {
+  flex: 3;
+}
+
+.-year2 {
+  flex:1;
+  margin-top: 13px;
+  margin-right: 10px;
+  font-style: italic;
+}
+
+.program {
+  flex: 1;
+  width: 300px;
   float: left;
-  clear: left;
+  display: flex;
 }
 
 .resume-side {
-  width: 40%;
-  float: right;
-  clear: right;
+  width: 280px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  bottom: 50px;
 }
 
 .skills {
@@ -207,10 +282,11 @@ h3 {
 }
 
 .bubble {
-  border: 1px solid #ff6699;
+  border: 1px solid #375484;
   padding: 3px;
   margin: 1px;
   border-radius: 25px;
+  display: inline;
 }
 
 .bubble-case {
@@ -218,27 +294,31 @@ h3 {
   display: flex;
   align-content: flex-start;
   align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
 }
 
-.resume-container {
-  width:100%;
-  float: left;
+.sub-head2 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 15px; 
+  padding-bottom: 10px;
 }
 
 .profile-pic {
   display: inline;
   width: 40%;
   margin: 10px;
-  float: left;
-  clear: left;
+  float: right;
+  clear: right;
 }
 
 .bio {
   font-size: 16px;
   margin: 25px;
   width: 50%;
-  float: right;
-  clear: right;
+  float: left;
+  clear: left;
 }
 
 .contact-container {
@@ -256,8 +336,96 @@ h3 {
 
 }
 
-.projects p1{
-  width: 200px;
-  background-image: url("./img/squirrel-screenshot.png");
+.projects-container {
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.project {
+  width: 325px;
+  height:220px;
+  margin: 5px; 
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  position: relative;
+}
+
+.-p1 {
+  position: absolute;
+  width: 96%;
+  height: 96%;
+  left: 2%;
+  top: 2%;
+  background-image: url("img/squirrel-screenshot.png");
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 100px;
+  left: 120px;
+  right: 10px;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  z-index: 1;
+  background-color: #f4f7fc;
+  color: black;
+  overflow: scroll;
+  padding-bottom: 20px;
+}
+
+.icon-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 15px;
+  margin: 2px;
+  font-size: 20px;
+  color: #ffd3cc;
+  padding-left: 6px;
+  padding-right: 5px; 
+  border: 1px solid #ffd3cc;
+  border-radius: 50%;
+}
+
+.project-head {
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+iframe .video {
+  position: absolute;
+  opacity: 1;
+  z-index: 2;
+  padding: 20px;
+}
+
+.project-image {
+  width: 550px;
+}
+
+.project-des {
+  padding-bottom: 20px;
+}
+
+.project-stack {
+  margin: 20px;
+}
+
+.-p2 {
+  position: absolute;
+  width: 96%;
+  height: 96%;
+  left: 2%;
+  top: 2%;
+  background-image: url("img/flash-linkedin2.jpg");
   background-size: cover;
 }

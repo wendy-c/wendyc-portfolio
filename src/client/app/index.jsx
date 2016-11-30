@@ -29,7 +29,7 @@ class App extends React.Component {
     if (this.state.current === 0) {
       return (
         <div className="selection-box">
-          <div className={this.state.current === 1 ? "selection -bk1 selection-hover" : "selection -bk1"} onClick={() => this.toggleCurrent(1)}>
+          <div className={this.state.current === 1 ? "selection -bk1-hover selection-hover" : "selection -bk1"} onClick={() => this.toggleCurrent(1)}>
             <span>ABOUT</span>
           </div>
           <div className={this.state.current === 2 ? "selection -bk2 selection-hover" : "selection -bk2"} onClick={() => this.toggleCurrent(2)}>
@@ -67,6 +67,7 @@ class App extends React.Component {
           </div>
         </div>
         {puzzleView}
+        <div className="empty"></div>
       </div> 
       );
   }
