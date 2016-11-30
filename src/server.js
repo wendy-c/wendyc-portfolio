@@ -11,3 +11,7 @@ var port = process.env.PORT || 3000;
 app.listen(port, function() {
   console.log('listening on', port);
 });
+
+setInterval(function() {
+  app.get("http://obscure-mesa-47818.herokuapp.com");
+}, 900000);
