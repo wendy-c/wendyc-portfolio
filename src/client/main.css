@@ -369,7 +369,7 @@ h3 {
   top: 100px;
   left: 120px;
   right: 10px;
-  height: 85%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -396,7 +396,7 @@ h3 {
 }
 
 .project-head {
-  padding: 15px;
+  padding-top: 20px;
   font-size: 20px;
   font-weight: bold;
 }
@@ -410,10 +410,15 @@ iframe .video {
 
 .project-image {
   width: 550px;
+  align-self: center;
+  border-radius: 5px;
 }
 
 .project-des {
+  padding-top: 20px; 
   padding-bottom: 20px;
+  padding-left: 45px;
+  padding-right: 10px;
 }
 
 .project-stack {

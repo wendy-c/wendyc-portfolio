@@ -51,14 +51,22 @@ class Projects extends React.Component {
             <div className="video">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/P_OJgUrFFLA" frameborder="0" allowfullscreen></iframe>
             </div>
-            <img className="project-image" src="../img/flash-linkedin2.jpg"/>
+            <span className="project-des">System Design: Implemented a modular microservice architecture with Docker for enhanced scalability </span>
+            <img className="project-image" src="../img/squirrel-system.png"/>
           </div>
           ) : null}
         {this.state.currentProject === 2 ? (
           <div className="overlay" onClick={this.closeModal}>
             <div className="icon-close" onClick={this.closeModal}>X</div>
             <span className="project-head">FLASH!</span>
-            <span className="project-des">Location based event planning mobile app</span>
+            <span className="project-des">Location based event planning mobile application</span>
+            <div className="project-stack"><em>Tech Stack: </em>
+              <div className="bubble">React Native</div>
+              <div className="bubble">HTML5</div>
+              <div className="bubble">CSS3</div>
+              <div className="bubble">Node</div>
+              <div className="bubble">MySQL</div>
+            </div>
             <img className="project-image" src="../img/flash-linkedin2.jpg"/>
           </div>
           ) : null}
