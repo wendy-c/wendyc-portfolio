@@ -5,6 +5,8 @@ var app = express();
 
 app.use(express.static('./client'));
 
-app.listen(3000, function() {
-  console.log('listening on 3000!');
+var port = process.env.PORT || 3000;
+
+app.listen(port, function() {
+  console.log('listening on', port);
 });
