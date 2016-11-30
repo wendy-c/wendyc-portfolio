@@ -16,9 +16,9 @@ p {
   width: 800px;
 }
 
-.empty {
+/*.empty {
   height: 100px;
-}
+}*/
 
 .title {
   display: flex;
@@ -31,6 +31,8 @@ p {
   margin-bottom: 10px;
   border-bottom: 1px solid #d9d9d9;
 }
+
+/*heading*/
 
 h1 {
   color: #375484;
@@ -60,7 +62,7 @@ h3 {
   margin: 2px;
 }
 
-
+/*landing selection*/
 .selection-box {
   display: flex;
   flex-direction: row;
@@ -171,8 +173,11 @@ h3 {
 
 }
 
+/*main body*/
 .detail-view {
   width: 100%;
+  height: 400px;
+  overflow: scroll;
 }
 
 .side-menu {
@@ -224,14 +229,15 @@ h3 {
   content: attr(data-hover);
 }
 
+/*resume*/
 .resume-container {
   position: relative;
 }
 
 .resume-body {
-  width: 380px;
+  width: 360px;
   position: absolute;
-  left: 10px;
+  left: 5px;
   top: 10px;
   bottom: 50px;
 }
@@ -270,11 +276,11 @@ h3 {
 }
 
 .resume-side {
-  width: 280px;
+  width: 250px;
   position: absolute;
-  right: 10px;
+  left: 375px;
   top: 10px;
-  bottom: 50px;
+  bottom: 0px;
 }
 
 .skills {
@@ -305,6 +311,7 @@ h3 {
   padding-bottom: 10px;
 }
 
+/*profile*/
 .profile-pic {
   display: inline;
   width: 40%;
@@ -321,6 +328,7 @@ h3 {
   clear: left;
 }
 
+/*contact*/
 .contact-container {
   margin: 50px;
   margin-bottom: 50px;
@@ -336,6 +344,7 @@ h3 {
 
 }
 
+/*projects*/
 .projects-container {
   margin-left: 20px;
   display: flex;
@@ -366,10 +375,10 @@ h3 {
 
 .overlay {
   position: absolute;
-  top: 100px;
+  top: 90px;
   left: 120px;
   right: 10px;
-  height: 100%;
+  height: 420px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -377,8 +386,8 @@ h3 {
   z-index: 1;
   background-color: #f4f7fc;
   color: black;
-  overflow: scroll;
   padding-bottom: 20px;
+  overflow: scroll;
 }
 
 .icon-close {
