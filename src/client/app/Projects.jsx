@@ -31,7 +31,9 @@ class Projects extends React.Component {
         <div className="project" onClick={() => this.projectView(2)}>
           <div className="-p2"></div>
         </div>
-        <div className="project -p3"></div>
+        <div className="project" onClick={() => this.projectView(3)}>
+          <div className="-p3"></div>
+        </div>
       
         {this.state.currentProject === 1 ? (
           <div className="overlay" onClick={this.closeModal}>
@@ -68,6 +70,23 @@ class Projects extends React.Component {
               <div className="bubble">MySQL</div>
             </div>
             <img className="project-image" src="../img/flash-linkedin2.jpg"/>
+          </div>
+          ) : null}
+        {this.state.currentProject === 3 ? (
+          <div className="overlay" onClick={this.closeModal}>
+            <div className="icon-close" onClick={this.closeModal}>X</div>
+            <span className="project-head">Tickr</span>
+            <span className="project-des">Competing marketplace for time sensitive assets</span>
+            <div className="project-stack"><em>Tech Stack: </em>
+              <div className="bubble">React</div>
+              <div className="bubble">HTML5</div>
+              <div className="bubble">CSS3</div>
+              <div className="bubble">Node</div>
+              <div className="bubble">PostgreSQL</div>
+              <div className="bubble">Webpack</div>
+            </div>
+            <img className="project-image" src="../img/tickr2.png"/>
+            <img className="project-image" src="../img/tickr1.png"/>
           </div>
           ) : null}
       </div>

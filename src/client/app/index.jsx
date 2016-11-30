@@ -67,7 +67,6 @@ class App extends React.Component {
           </div>
         </div>
         {puzzleView}
-        <div className="empty"></div>
       </div> 
       );
   }

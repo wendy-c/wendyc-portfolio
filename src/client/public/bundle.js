@@ -213,8 +213,7 @@
 	            )
 	          )
 	        ),
-	        puzzleView,
-	        _react2.default.createElement('div', { className: 'empty' })
+	        puzzleView
 	      );
 	    }
 	  }]);
@@ -21940,7 +21939,13 @@
 	            } },
 	          _react2.default.createElement("div", { className: "-p2" })
 	        ),
-	        _react2.default.createElement("div", { className: "project -p3" }),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "project", onClick: function onClick() {
+	              return _this2.projectView(3);
+	            } },
+	          _react2.default.createElement("div", { className: "-p3" })
+	        ),
 	        this.state.currentProject === 1 ? _react2.default.createElement(
 	          "div",
 	          { className: "overlay", onClick: this.closeModal },
@@ -22073,6 +22078,66 @@
 	            )
 	          ),
 	          _react2.default.createElement("img", { className: "project-image", src: "../img/flash-linkedin2.jpg" })
+	        ) : null,
+	        this.state.currentProject === 3 ? _react2.default.createElement(
+	          "div",
+	          { className: "overlay", onClick: this.closeModal },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "icon-close", onClick: this.closeModal },
+	            "X"
+	          ),
+	          _react2.default.createElement(
+	            "span",
+	            { className: "project-head" },
+	            "Tickr"
+	          ),
+	          _react2.default.createElement(
+	            "span",
+	            { className: "project-des" },
+	            "Competing marketplace for time sensitive assets"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "project-stack" },
+	            _react2.default.createElement(
+	              "em",
+	              null,
+	              "Tech Stack: "
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "bubble" },
+	              "React"
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "bubble" },
+	              "HTML5"
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "bubble" },
+	              "CSS3"
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "bubble" },
+	              "Node"
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "bubble" },
+	              "PostgreSQL"
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "bubble" },
+	              "Webpack"
+	            )
+	          ),
+	          _react2.default.createElement("img", { className: "project-image", src: "../img/tickr2.png" }),
+	          _react2.default.createElement("img", { className: "project-image", src: "../img/tickr1.png" })
 	        ) : null
 	      );
 	    }
