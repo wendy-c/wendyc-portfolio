@@ -25,13 +25,25 @@ class Projects extends React.Component {
   render() {
     return (
       <div className="projects-container">
-        <div className="project-head">PROJECTS</div>
+        <div className="project-head1">Some project I have worked on: </div>
+        <div className="project-name">
+          <p>Squirrel</p>
+        </div>
+        <div className="project-name">
+          <p>Flash!</p>
+        </div>
         <div className="project" onClick={() => this.projectView(1)}>
           <div className="-p1"></div>
         </div>
         <div className="project" onClick={() => this.projectView(2)}>
           <div className="-p2"></div>
         </div>
+        <div className="project-name">
+          <p>TickrTaker</p>
+        </div>
+        <div className="project-name">
+          <p>PawME</p>
+        </div>       
         <div className="project" onClick={() => this.projectView(3)}>
           <div className="-p3"></div>
         </div>

@@ -429,6 +429,14 @@ h3 {
   text-align: center;
 }
 
+.project-head1 {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 iframe .video {
   position: absolute;
   opacity: 1;
@@ -504,4 +512,11 @@ iframe .video {
   top: 2%;
   background-image: url("img/weatherman.png");
   background-size: cover;
+}
+
+.project-name {
+  width: 50%;
+  height:50px;
+  font-size: 20px;
+  font-style: italic;
 }

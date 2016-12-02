@@ -21974,8 +21974,26 @@
 	        { className: "projects-container" },
 	        _react2.default.createElement(
 	          "div",
-	          { className: "project-head" },
-	          "PROJECTS"
+	          { className: "project-head1" },
+	          "Some project I have worked on: "
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "project-name" },
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "Squirrel"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "project-name" },
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "Flash!"
+	          )
 	        ),
 	        _react2.default.createElement(
 	          "div",
@@ -21990,6 +22008,24 @@
 	              return _this2.projectView(2);
 	            } },
 	          _react2.default.createElement("div", { className: "-p2" })
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "project-name" },
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "TickrTaker"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "project-name" },
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "PawME"
+	          )
 	        ),
 	        _react2.default.createElement(
 	          "div",
