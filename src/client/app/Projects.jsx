@@ -110,7 +110,7 @@ class Projects extends React.Component {
               <div className="bubble">Webpack</div>
               <div className="bubble">Bootstrap</div>
             </div>
-            <span className="project-des">Inherited a code based, optimized it by redeigning UX/UI. Created interaction channel between buyer and seller with inbox and FAQ feature. Queried to PostgreSQL database with Sequelize ORM</span>
+            <span className="project-des">Inherited a code based, optimized it by redesigning UX/UI. Created interaction channel between buyer and seller with inbox and FAQ feature. Queried to PostgreSQL database with Sequelize ORM</span>
             <img className="project-image" src="../img/tickr2.png"/>
             <img className="project-image" src="../img/tickr1.png"/>
           </div>

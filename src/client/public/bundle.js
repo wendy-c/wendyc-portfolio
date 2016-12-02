@@ -22274,7 +22274,7 @@
 	          _react2.default.createElement(
 	            "span",
 	            { className: "project-des" },
-	            "Inherited a code based, optimized it by redeigning UX/UI. Created interaction channel between buyer and seller with inbox and FAQ feature. Queried to PostgreSQL database with Sequelize ORM"
+	            "Inherited a code based, optimized it by redesigning UX/UI. Created interaction channel between buyer and seller with inbox and FAQ feature. Queried to PostgreSQL database with Sequelize ORM"
 	          ),
 	          _react2.default.createElement("img", { className: "project-image", src: "../img/tickr2.png" }),
 	          _react2.default.createElement("img", { className: "project-image", src: "../img/tickr1.png" })
