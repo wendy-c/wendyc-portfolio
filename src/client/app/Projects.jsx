@@ -25,6 +25,7 @@ class Projects extends React.Component {
   render() {
     return (
       <div className="projects-container">
+        <div className="project-head">PROJECTS</div>
         <div className="project" onClick={() => this.projectView(1)}>
           <div className="-p1"></div>
         </div>
@@ -33,6 +34,15 @@ class Projects extends React.Component {
         </div>
         <div className="project" onClick={() => this.projectView(3)}>
           <div className="-p3"></div>
+        </div>
+        <div className="project" onClick={() => this.projectView(4)}>
+          <div className="-p4"></div>
+        </div>
+        <div className="project" onClick={() => this.projectView(5)}>
+          <div className="-p5"></div>
+        </div>
+        <div className="project" onClick={() => this.projectView(6)}>
+          <div className="-p6"></div>
         </div>
       
         {this.state.currentProject === 1 ? (

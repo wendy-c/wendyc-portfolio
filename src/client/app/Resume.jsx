@@ -64,9 +64,13 @@ class Resume extends React.Component {
               <div className="-year2">2012-2016</div>
             </div>
             <div className="-program">Internet Sales Manager</div>
+            <div>
             <p>Managed and responded to online vehicle inquires traffic, communicated clear information regarding product details, inventory availability, and purchase and lease options</p>
             <p>Delivered a personalized customer experience by understanding specific client needs and providing education to determine the best product choice for the customer</p>
-
+            </div>
+            <div className="download-resume">
+              <a href="img/resume.pdf">DOWNLOAD PDF</a>
+            </div>
         </div>
       </div>
       );

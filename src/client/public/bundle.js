@@ -21845,14 +21845,27 @@
 	            'Internet Sales Manager'
 	          ),
 	          _react2.default.createElement(
-	            'p',
+	            'div',
 	            null,
-	            'Managed and responded to online vehicle inquires traffic, communicated clear information regarding product details, inventory availability, and purchase and lease options'
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Managed and responded to online vehicle inquires traffic, communicated clear information regarding product details, inventory availability, and purchase and lease options'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Delivered a personalized customer experience by understanding specific client needs and providing education to determine the best product choice for the customer'
+	            )
 	          ),
 	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'Delivered a personalized customer experience by understanding specific client needs and providing education to determine the best product choice for the customer'
+	            'div',
+	            { className: 'download-resume' },
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'img/resume.pdf' },
+	              'DOWNLOAD PDF'
+	            )
 	          )
 	        )
 	      );
@@ -21927,6 +21940,11 @@
 	        { className: "projects-container" },
 	        _react2.default.createElement(
 	          "div",
+	          { className: "project-head" },
+	          "PROJECTS"
+	        ),
+	        _react2.default.createElement(
+	          "div",
 	          { className: "project", onClick: function onClick() {
 	              return _this2.projectView(1);
 	            } },
@@ -21945,6 +21963,27 @@
 	              return _this2.projectView(3);
 	            } },
 	          _react2.default.createElement("div", { className: "-p3" })
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "project", onClick: function onClick() {
+	              return _this2.projectView(4);
+	            } },
+	          _react2.default.createElement("div", { className: "-p4" })
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "project", onClick: function onClick() {
+	              return _this2.projectView(5);
+	            } },
+	          _react2.default.createElement("div", { className: "-p5" })
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "project", onClick: function onClick() {
+	              return _this2.projectView(6);
+	            } },
+	          _react2.default.createElement("div", { className: "-p6" })
 	        ),
 	        this.state.currentProject === 1 ? _react2.default.createElement(
 	          "div",

@@ -14,4 +14,4 @@ app.listen(port, function() {
 
 setInterval(function() {
   app.get("http://obscure-mesa-47818.herokuapp.com");
-}, 900000);
+}, 300000);

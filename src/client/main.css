@@ -284,6 +284,18 @@ h3 {
   bottom: 0px;
 }
 
+.download-resume {
+  border: 1px solid #375484;
+  background-color: #f4f7fc;
+  color: #375484;
+  font-weight: bold;
+}
+
+.download-resume:hover {
+  background-color: #375484;
+  color: #f4f7fc;
+}
+
 .skills {
   margin: 5px;
 }
@@ -453,5 +465,25 @@ iframe .video {
   left: 2%;
   top: 2%;
   background-image: url("img/tickr2.png");
+  background-size: cover;
+}
+
+.-p5 {
+  position: absolute;
+  width: 96%;
+  height: 96%;
+  left: 2%;
+  top: 2%;
+  background-image: url("img/tictactoe.png");
+  background-size: cover;
+}
+
+.-p6 {
+  position: absolute;
+  width: 96%;
+  height: 96%;
+  left: 2%;
+  top: 2%;
+  background-image: url("img/weatherman.png");
   background-size: cover;
 }
