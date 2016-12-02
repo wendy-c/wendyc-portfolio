@@ -22140,6 +22140,12 @@
 	          _react2.default.createElement(
 	            "span",
 	            { className: "project-des" },
+	            "Desktop app created using Electron, users can read articles they have saved offline."
+	          ),
+	          _react2.default.createElement("img", { className: "project-image", src: "../img/squirrel-desktop.png" }),
+	          _react2.default.createElement(
+	            "span",
+	            { className: "project-des" },
 	            "System Design: Implemented a modular microservice architecture with Docker for enhanced scalability "
 	          ),
 	          _react2.default.createElement("img", { className: "project-image", src: "../img/squirrel-system.png" })
@@ -22195,6 +22201,11 @@
 	              { className: "bubble" },
 	              "MySQL"
 	            )
+	          ),
+	          _react2.default.createElement(
+	            "span",
+	            { className: "project-des" },
+	            "Utilized React Native components to create great UX/UI. With integated geolocation and Google geo-coding, users can browse near by events on map view based on where they are."
 	          ),
 	          _react2.default.createElement("img", { className: "project-image", src: "../img/flash-linkedin2.jpg" })
 	        ) : null,
@@ -22253,10 +22264,64 @@
 	              "div",
 	              { className: "bubble" },
 	              "Webpack"
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "bubble" },
+	              "Bootstrap"
 	            )
+	          ),
+	          _react2.default.createElement(
+	            "span",
+	            { className: "project-des" },
+	            "Inherited a code based, optimized it by redeigning UX/UI. Created interaction channel between buyer and seller with inbox and FAQ feature. Queried to PostgreSQL database with Sequelize ORM"
 	          ),
 	          _react2.default.createElement("img", { className: "project-image", src: "../img/tickr2.png" }),
 	          _react2.default.createElement("img", { className: "project-image", src: "../img/tickr1.png" })
+	        ) : null,
+	        this.state.currentProject === 4 ? _react2.default.createElement(
+	          "div",
+	          { className: "overlay", onClick: this.closeModal },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "icon-close" },
+	            "x"
+	          ),
+	          _react2.default.createElement(
+	            "span",
+	            { className: "project-head" },
+	            "PawME"
+	          ),
+	          _react2.default.createElement(
+	            "span",
+	            { className: "project-des" },
+	            "Find adoptable pets near you"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "project-stack" },
+	            _react2.default.createElement(
+	              "em",
+	              null,
+	              "Tech Stack: "
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "bubble" },
+	              "MEAN"
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "bubble" },
+	              "Bootstrap"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "span",
+	            { className: "project-des" },
+	            "Utilized Angular for efficient DOM rendering and scalable non-relational data storage."
+	          ),
+	          _react2.default.createElement("img", { className: "project-image", src: "../img/pawme.png" })
 	        ) : null
 	      );
 	    }

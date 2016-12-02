@@ -74,6 +74,8 @@ class Projects extends React.Component {
             </div>
             <span className="project-des">Designed user focused interface with React, Materialize, CSS3 for quick reconciliation. Cached high-demand data with Redis to enhanced performance and reduced database load. Architected a relational database with MySQL and Sequelize for efficient data storage and querying.</span>
             <img className="project-image" src="../img/squirrel-screenshot.png"/>
+            <span className="project-des">Desktop app created using Electron, users can read articles they have saved offline.</span>
+            <img className="project-image" src="../img/squirrel-desktop.png"/>
             <span className="project-des">System Design: Implemented a modular microservice architecture with Docker for enhanced scalability </span>
             <img className="project-image" src="../img/squirrel-system.png"/>
           </div>
@@ -90,6 +92,7 @@ class Projects extends React.Component {
               <div className="bubble">Node</div>
               <div className="bubble">MySQL</div>
             </div>
+            <span className="project-des">Utilized React Native components to create great UX/UI. With integated geolocation and Google geo-coding, users can browse near by events on map view based on where they are.</span>
             <img className="project-image" src="../img/flash-linkedin2.jpg"/>
           </div>
           ) : null}
@@ -105,9 +108,24 @@ class Projects extends React.Component {
               <div className="bubble">Node</div>
               <div className="bubble">PostgreSQL</div>
               <div className="bubble">Webpack</div>
+              <div className="bubble">Bootstrap</div>
             </div>
+            <span className="project-des">Inherited a code based, optimized it by redeigning UX/UI. Created interaction channel between buyer and seller with inbox and FAQ feature. Queried to PostgreSQL database with Sequelize ORM</span>
             <img className="project-image" src="../img/tickr2.png"/>
             <img className="project-image" src="../img/tickr1.png"/>
+          </div>
+          ) : null}
+        {this.state.currentProject === 4 ? (
+          <div className="overlay" onClick={this.closeModal}>
+            <div className="icon-close">x</div>
+            <span className="project-head">PawME</span>
+            <span className="project-des">Find adoptable pets near you</span>
+            <div className="project-stack"><em>Tech Stack: </em>
+              <div className="bubble">MEAN</div>
+              <div className="bubble">Bootstrap</div>
+            </div>
+            <span className="project-des">Utilized Angular for efficient DOM rendering and scalable non-relational data storage.</span>
+            <img className="project-image" src="../img/pawme.png"/>
           </div>
           ) : null}
       </div>
