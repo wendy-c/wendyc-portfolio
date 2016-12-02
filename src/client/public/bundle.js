@@ -22005,20 +22005,6 @@
 	            } },
 	          _react2.default.createElement("div", { className: "-p4" })
 	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "project", onClick: function onClick() {
-	              return _this2.projectView(5);
-	            } },
-	          _react2.default.createElement("div", { className: "-p5" })
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "project", onClick: function onClick() {
-	              return _this2.projectView(6);
-	            } },
-	          _react2.default.createElement("div", { className: "-p6" })
-	        ),
 	        this.state.currentProject === 1 ? _react2.default.createElement(
 	          "div",
 	          { className: "overlay", onClick: this.closeModal },
@@ -22035,7 +22021,7 @@
 	          _react2.default.createElement(
 	            "span",
 	            { className: "project-des" },
-	            "Web and Desktop application to cache reading materials"
+	            "Web and Desktop application for caching reading materials, allow user to store, read offline, share with friends and browse recommended materials"
 	          ),
 	          _react2.default.createElement(
 	            "div",
@@ -22049,6 +22035,11 @@
 	              "div",
 	              { className: "bubble" },
 	              "React"
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "bubble" },
+	              "Electron"
 	            ),
 	            _react2.default.createElement(
 	              "div",
@@ -22087,10 +22078,29 @@
 	            )
 	          ),
 	          _react2.default.createElement(
+	            "p",
+	            null,
+	            _react2.default.createElement(
+	              "em",
+	              null,
+	              _react2.default.createElement(
+	                "u",
+	                null,
+	                "Demo"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
 	            "div",
 	            { className: "video" },
 	            _react2.default.createElement("iframe", { width: "560", height: "315", src: "https://www.youtube.com/embed/P_OJgUrFFLA", frameborder: "0", allowfullscreen: true })
 	          ),
+	          _react2.default.createElement(
+	            "span",
+	            { className: "project-des" },
+	            "Designed user focused interface with React, Materialize, CSS3 for quick reconciliation. Cached high-demand data with Redis to enhanced performance and reduced database load. Architected a relational database with MySQL and Sequelize for efficient data storage and querying."
+	          ),
+	          _react2.default.createElement("img", { className: "project-image", src: "../img/squirrel-screenshot.png" }),
 	          _react2.default.createElement(
 	            "span",
 	            { className: "project-des" },
@@ -22378,7 +22388,6 @@
 	      var _this2 = this;
 
 	      var view = this.getView();
-	      console.log(this.state.about);
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'detail-view' },

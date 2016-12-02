@@ -53,7 +53,6 @@ class DetailView extends React.Component {
 
   render() {
     const view = this.getView();
-    console.log(this.state.about);
     return (
       <div className="detail-view">
         <div className="side-menu">

@@ -42,7 +42,7 @@ h1 {
 h3 {
   margin-left: 10px;
   margin-top: 3px;
-  color: #d9d9d9;
+  color: #9aa1ad;
 }
 
 .header {
@@ -422,9 +422,11 @@ h3 {
 }
 
 .project-head {
+  width: 100%;
   padding-top: 20px;
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
 }
 
 iframe .video {
@@ -445,12 +447,13 @@ iframe .video {
 .project-des {
   padding-top: 20px; 
   padding-bottom: 20px;
-  padding-left: 45px;
+  padding-left: 20px;
   padding-right: 10px;
+  float: left;
 }
 
 .project-stack {
-  margin: 20px;
+  margin-left: 10px;
 }
 
 .-p2 {

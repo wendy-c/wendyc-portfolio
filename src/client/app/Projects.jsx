@@ -37,21 +37,16 @@ class Projects extends React.Component {
         </div>
         <div className="project" onClick={() => this.projectView(4)}>
           <div className="-p4"></div>
-        </div>
-        <div className="project" onClick={() => this.projectView(5)}>
-          <div className="-p5"></div>
-        </div>
-        <div className="project" onClick={() => this.projectView(6)}>
-          <div className="-p6"></div>
-        </div>
+        </div> 
       
         {this.state.currentProject === 1 ? (
           <div className="overlay" onClick={this.closeModal}>
             <div className="icon-close">x</div>
             <span className="project-head">SQUIRREL</span>
-            <span className="project-des">Web and Desktop application to cache reading materials</span>
+            <span className="project-des">Web and Desktop application for caching reading materials, allow user to store, read offline, share with friends and browse recommended materials</span>
             <div className="project-stack"><em>Tech Stack: </em>
               <div className="bubble">React</div>
+              <div className="bubble">Electron</div>
               <div className="bubble">HTML5</div>
               <div className="bubble">CSS3</div>
               <div className="bubble">Node</div>
@@ -60,9 +55,13 @@ class Projects extends React.Component {
               <div className="bubble">MySQL</div>
               <div className="bubble">Webpack</div>
             </div>
+
+            <p><em><u>Demo</u></em></p>
             <div className="video">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/P_OJgUrFFLA" frameborder="0" allowfullscreen></iframe>
             </div>
+            <span className="project-des">Designed user focused interface with React, Materialize, CSS3 for quick reconciliation. Cached high-demand data with Redis to enhanced performance and reduced database load. Architected a relational database with MySQL and Sequelize for efficient data storage and querying.</span>
+            <img className="project-image" src="../img/squirrel-screenshot.png"/>
             <span className="project-des">System Design: Implemented a modular microservice architecture with Docker for enhanced scalability </span>
             <img className="project-image" src="../img/squirrel-system.png"/>
           </div>
