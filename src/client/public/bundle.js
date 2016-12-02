@@ -21893,12 +21893,12 @@
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'div',
-	            { className: 'download-resume bubble' },
+	            'form',
+	            { method: 'get', action: 'img/resume.pdf' },
 	            _react2.default.createElement(
-	              'a',
-	              { href: 'img/resume.pdf' },
-	              'DOWNLOAD PDF'
+	              'button',
+	              { className: 'download-resume', type: 'submit' },
+	              'DOWNLOAD RESUME IN PDF'
 	            )
 	          )
 	        )

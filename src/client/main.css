@@ -289,13 +289,14 @@ h3 {
   background-color: #f4f7fc;
   color: #375484 !important;
   font-weight: bold;
-  padding: 5px;
+  padding: 8px;
   font-size: 20px;
+  border-radius: 25px;
 }
 
 .download-resume:hover {
   background-color: #375484;
-  color: #f4f7fc;
+  color: #f4f7fc !important;
 }
 
 .skills {
