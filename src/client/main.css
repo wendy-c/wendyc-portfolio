@@ -287,8 +287,10 @@ h3 {
 .download-resume {
   border: 1px solid #375484;
   background-color: #f4f7fc;
-  color: #375484;
+  color: #375484 !important;
   font-weight: bold;
+  padding: 5px;
+  font-size: 20px;
 }
 
 .download-resume:hover {
@@ -411,8 +413,9 @@ h3 {
   margin: 2px;
   font-size: 20px;
   color: #ffd3cc;
-  padding-left: 6px;
-  padding-right: 5px; 
+  padding-left: 9px; 
+  padding-right: 3px;
+  padding-bottom: 2px;
   border: 1px solid #ffd3cc;
   border-radius: 50%;
 }
@@ -435,6 +438,7 @@ iframe .video {
   align-self: center;
   border-radius: 5px;
   margin: 10px;
+  border: 5px solid #fff;
 }
 
 .project-des {
@@ -465,6 +469,16 @@ iframe .video {
   left: 2%;
   top: 2%;
   background-image: url("img/tickr2.png");
+  background-size: cover;
+}
+
+.-p4 {
+  position: absolute;
+  width: 96%;
+  height: 96%;
+  left: 2%;
+  top: 2%;
+  background-image: url("img/pawme.png");
   background-size: cover;
 }
 

@@ -21641,17 +21641,51 @@
 	      _react2.default.createElement(
 	        "p",
 	        null,
-	        "I am a software engineer and a high energy individual with a growth mindset. My passion is in building Javascript applications that solve real world problems and make the world a better place. As someone with a good eye in design and strong intuition in user experience, I have a particular love for optimizing my work to achieve seamless experience for users."
+	        "I am a high-energy software engineer with a growth mindset. My passion is leveraging technology to solve real world problems. As someone with a good eye for design and strong intuition in user experience, I have a particular love for crafting simple and delightful interfaces."
 	      ),
 	      _react2.default.createElement(
 	        "p",
 	        null,
-	        "When I was 15, I left my home town Hong Kong and moved to Sydney on my own to attend a boarding school. After that, I found my favorite city, San Francisco and decided to become a citizen."
+	        "Fun Facts about me:"
 	      ),
 	      _react2.default.createElement(
 	        "p",
-	        null,
-	        "In my spare time, I enjoy checking out national parks with my two poodles, attending music festivals and playing ukulele next to a bonfire with friends. My favorite food is pancakes."
+	        { className: "bubble-case" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "bubble" },
+	          "Ukulele musician"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "bubble" },
+	          "National Parks explorer"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "bubble" },
+	          "Owner of two toy poodles"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "bubble" },
+	          "Professional Seamstress"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "bubble" },
+	          "Music Festival goer"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "bubble" },
+	          "Pancakes enthusiast"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "bubble" },
+	          "Born in Hong Kong, lived in Sydney"
+	        )
 	      )
 	    )
 	  );
@@ -21860,7 +21894,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'download-resume' },
+	            { className: 'download-resume bubble' },
 	            _react2.default.createElement(
 	              'a',
 	              { href: 'img/resume.pdf' },
@@ -21990,8 +22024,8 @@
 	          { className: "overlay", onClick: this.closeModal },
 	          _react2.default.createElement(
 	            "div",
-	            { className: "icon-close", onClick: this.closeModal },
-	            "X"
+	            { className: "icon-close" },
+	            "x"
 	          ),
 	          _react2.default.createElement(
 	            "span",
@@ -22069,8 +22103,8 @@
 	          { className: "overlay", onClick: this.closeModal },
 	          _react2.default.createElement(
 	            "div",
-	            { className: "icon-close", onClick: this.closeModal },
-	            "X"
+	            { className: "icon-close" },
+	            "x"
 	          ),
 	          _react2.default.createElement(
 	            "span",
@@ -22123,8 +22157,8 @@
 	          { className: "overlay", onClick: this.closeModal },
 	          _react2.default.createElement(
 	            "div",
-	            { className: "icon-close", onClick: this.closeModal },
-	            "X"
+	            { className: "icon-close" },
+	            "x"
 	          ),
 	          _react2.default.createElement(
 	            "span",

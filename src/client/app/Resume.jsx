@@ -68,7 +68,7 @@ class Resume extends React.Component {
             <p>Managed and responded to online vehicle inquires traffic, communicated clear information regarding product details, inventory availability, and purchase and lease options</p>
             <p>Delivered a personalized customer experience by understanding specific client needs and providing education to determine the best product choice for the customer</p>
             </div>
-            <div className="download-resume">
+            <div className="download-resume bubble">
               <a href="img/resume.pdf">DOWNLOAD PDF</a>
             </div>
         </div>

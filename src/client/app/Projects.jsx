@@ -47,7 +47,7 @@ class Projects extends React.Component {
       
         {this.state.currentProject === 1 ? (
           <div className="overlay" onClick={this.closeModal}>
-            <div className="icon-close" onClick={this.closeModal}>X</div>
+            <div className="icon-close">x</div>
             <span className="project-head">SQUIRREL</span>
             <span className="project-des">Web and Desktop application to cache reading materials</span>
             <div className="project-stack"><em>Tech Stack: </em>
@@ -69,7 +69,7 @@ class Projects extends React.Component {
           ) : null}
         {this.state.currentProject === 2 ? (
           <div className="overlay" onClick={this.closeModal}>
-            <div className="icon-close" onClick={this.closeModal}>X</div>
+            <div className="icon-close">x</div>
             <span className="project-head">FLASH!</span>
             <span className="project-des">Location based event planning mobile application</span>
             <div className="project-stack"><em>Tech Stack: </em>
@@ -84,7 +84,7 @@ class Projects extends React.Component {
           ) : null}
         {this.state.currentProject === 3 ? (
           <div className="overlay" onClick={this.closeModal}>
-            <div className="icon-close" onClick={this.closeModal}>X</div>
+            <div className="icon-close">x</div>
             <span className="project-head">Tickr</span>
             <span className="project-des">Competing marketplace for time sensitive assets</span>
             <div className="project-stack"><em>Tech Stack: </em>
