@@ -320,11 +320,28 @@ h3 {
   flex-wrap: wrap;
 }
 
+.bubble-case1 {
+  width: 350px;
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
 .sub-head2 {
   font-size: 18px;
   font-weight: bold;
   padding-top: 15px; 
   padding-bottom: 10px;
+}
+
+.sub-head3 {
+  font-size: 16px;
+  font-style: italic;
+  padding-top: 10px; 
+  padding-bottom: 10px;
+  width: 100%;
 }
 
 /*profile*/

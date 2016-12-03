@@ -21650,7 +21650,7 @@
 	      ),
 	      _react2.default.createElement(
 	        "p",
-	        { className: "bubble-case" },
+	        { className: "bubble-case1" },
 	        _react2.default.createElement(
 	          "div",
 	          { className: "bubble" },
@@ -21670,6 +21670,11 @@
 	          "div",
 	          { className: "bubble" },
 	          "Professional Seamstress"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "bubble" },
+	          "7th Grade Piano"
 	        ),
 	        _react2.default.createElement(
 	          "div",
@@ -21726,10 +21731,10 @@
 	    var _this = _possibleConstructorReturn(this, (Resume.__proto__ || Object.getPrototypeOf(Resume)).call(this, props));
 
 	    _this.state = {
-	      strong: ['Javascript(ES6)', 'HTML5', 'JQuery', 'CSS3', 'Node/ExpressJS', 'ReactJS', 'AngularJS', 'MySQL', 'Git'],
+	      strong: ['Javascript(ES6)', 'HTML5', 'JQuery', 'CSS3', 'Node/ExpressJS', 'ReactJS', 'AngularJS', 'MySQL', 'API Development', 'Git'],
 	      experienced: ['React Native', 'Redux', 'Sass', 'D3', 'MongoDB', 'Redis', 'Grunt', 'Gulp', 'Docker', 'Webpack', 'TDD'],
 	      languages: ['English', 'Cantonese', 'Mandarin'],
-	      others: ['Photoshop', 'Design Concept', 'Sketching', 'Customer experience', 'Apparel Pattern Drafting', 'Sewing', '7th Grade Piano', 'Ukulele']
+	      others: ['Photoshop', 'Design Concept', 'Illustration', 'Customer Experience', 'Sales', 'Fashion Design']
 	    };
 	    _this.bubblize = _this.bubblize.bind(_this);
 	    return _this;
@@ -21766,26 +21771,28 @@
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'sub-head2' },
-	              _react2.default.createElement(
-	                'em',
-	                null,
-	                'Programming'
-	              )
+	              'Programming'
 	            ),
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'bubble-case' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'sub-head3' },
+	                'Strong:'
+	              ),
 	              this.bubblize(this.state.strong),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'sub-head3' },
+	                'Experienced:'
+	              ),
 	              this.bubblize(this.state.experienced)
 	            ),
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'sub-head2' },
-	              _react2.default.createElement(
-	                'em',
-	                null,
-	                'Languages'
-	              )
+	              'Languages'
 	            ),
 	            _react2.default.createElement(
 	              'div',
@@ -21795,11 +21802,7 @@
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'sub-head2' },
-	              _react2.default.createElement(
-	                'em',
-	                null,
-	                'Other Skills'
-	              )
+	              'Other Skills'
 	            ),
 	            _react2.default.createElement(
 	              'div',

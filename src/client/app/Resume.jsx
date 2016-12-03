@@ -5,10 +5,10 @@ class Resume extends React.Component {
     super(props);
 
     this.state = {
-      strong: ['Javascript(ES6)', 'HTML5', 'JQuery', 'CSS3', 'Node/ExpressJS', 'ReactJS', 'AngularJS', 'MySQL', 'Git'],
+      strong: ['Javascript(ES6)', 'HTML5', 'JQuery', 'CSS3', 'Node/ExpressJS', 'ReactJS', 'AngularJS', 'MySQL', 'API Development', 'Git'],
       experienced: ['React Native', 'Redux', 'Sass', 'D3', 'MongoDB', 'Redis', 'Grunt', 'Gulp', 'Docker', 'Webpack', 'TDD'],
       languages: ['English', 'Cantonese', 'Mandarin'],
-      others: ['Photoshop', 'Design Concept', 'Sketching', 'Customer experience', 'Apparel Pattern Drafting', 'Sewing', '7th Grade Piano', 'Ukulele']
+      others: ['Photoshop', 'Design Concept', 'Illustration', 'Customer Experience', 'Sales', 'Fashion Design']
     };
     this.bubblize = this.bubblize.bind(this);
   }
@@ -25,15 +25,18 @@ class Resume extends React.Component {
         <div className="resume-side">
           <h2 className="sub-head">Skills</h2>
           <div className="skills">
-            <div className="sub-head2"><em>Programming</em></div>
+            <div className="sub-head2">Programming</div>
             <div className="bubble-case">
-              {this.bubblize(this.state.strong)}{this.bubblize(this.state.experienced)}
+            <div className="sub-head3">Strong:</div>
+              {this.bubblize(this.state.strong)}
+            <div className="sub-head3">Experienced:</div>
+              {this.bubblize(this.state.experienced)}
             </div>
-            <div className="sub-head2"><em>Languages</em></div>
+            <div className="sub-head2">Languages</div>
             <div className="bubble-case">
               {this.bubblize(this.state.languages)}
             </div>
-            <div className="sub-head2"><em>Other Skills</em></div>
+            <div className="sub-head2">Other Skills</div>
             <div className="bubble-case">
               {this.bubblize(this.state.others)}
             </div>
