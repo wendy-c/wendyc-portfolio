@@ -6,17 +6,29 @@ import Resume from './Resume.jsx';
 import Projects from './Projects.jsx';
 import Contact from './Contact.jsx';
 import DetailView from './DetailView.jsx';
+import MobileView from './MobileView.jsx';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      current: 0
+      current: 0,
+      hamburger: false
     };
 
-    this.toggleCurrent = this.toggleCurrent.bind(this);
     this.checkView = this.checkView.bind(this);
+    this.toggleCurrent = this.toggleCurrent.bind(this);
+  }
+
+  componentWillMount() {
+    const size = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    console.log('what size?', size);
+    if (size < 667) {
+      this.setState({
+        current: 5
+      });
+    }
   }
 
   toggleCurrent(value) {
@@ -43,6 +55,8 @@ class App extends React.Component {
           </div>
         </div>
         );
+    } else if (this.state.current === 5) {
+      <MobileView />
     } else {
       return (
         <DetailView current={this.state.current}/>
@@ -52,7 +66,7 @@ class App extends React.Component {
 
   render () {
     const puzzleView = this.checkView();
-
+    console.log('hmm current at?', this.state.current);
     return (
       <div className="container">
         <div className="title" onClick={() => this.toggleCurrent(0)}>
@@ -65,8 +79,24 @@ class App extends React.Component {
             <a href="https://github.com/wendy-c" target="_blank"><img className="icon" src={"../img/github-gray.png"}/></a>
             <a href="https://www.instagram.com/wendyc___/?ref=badge" target="_blank"><img className="icon" src={"../img/insta-gray.png"}/></a>
           </div>
+
+            <div className="hamburger-container" onClick={() => this.setState({hamburger: !this.state.hamburger})}>
+            <div className="hamburger-btn"></div>
+            </div>
+            {this.state.hamburger ? (
+              <div>
+                <ul className="hamburger-menu">
+                  <li className="dropdown line" onClick={() => this.toggleCurrent(1)}>About</li>
+                  <li className="dropdown line" onClick={() => this.toggleCurrent(2)}>Resume</li>
+                  <li className="dropdown line" onClick={() => this.toggleCurrent(3)}>Projects</li>
+                  <li className="dropdown" onClick={() => this.toggleCurrent(4)}>Contact</li>
+                </ul>
+              </div>
+            ) : null}
+
         </div>
         {puzzleView}
+        <div className="mobile-view">hi mobile, responsive version in progress</div>
       </div> 
       );
   }

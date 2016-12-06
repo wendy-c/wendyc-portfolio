@@ -25,7 +25,7 @@ class Projects extends React.Component {
   render() {
     return (
       <div className="projects-container">
-        <div className="project-head1">Some project I have worked on: </div>
+        <div className="project-head1">Some projects I have worked on: </div>
         <div className="project-name">
           <p>Squirrel</p>
         </div>
@@ -73,11 +73,11 @@ class Projects extends React.Component {
               <iframe width="560" height="315" src="https://www.youtube.com/embed/P_OJgUrFFLA" frameborder="0" allowfullscreen></iframe>
             </div>
             <span className="project-des">Designed user focused interface with React, Materialize, CSS3 for quick reconciliation. Cached high-demand data with Redis to enhanced performance and reduced database load. Architected a relational database with MySQL and Sequelize for efficient data storage and querying.</span>
-            <img className="project-image" src="../img/squirrel-screenshot.png"/>
+            <img className="project-image" src="../img/squirrel-screenshot.jpg"/>
             <span className="project-des">Desktop app created using Electron, users can read articles they have saved offline.</span>
-            <img className="project-image" src="../img/squirrel-desktop.png"/>
+            <img className="project-image" src="../img/squirrel-desktop.jpg"/>
             <span className="project-des">System Design: Implemented a modular microservice architecture with Docker for enhanced scalability </span>
-            <img className="project-image" src="../img/squirrel-system.png"/>
+            <img className="project-image" src="../img/squirrel-system.jpg"/>
           </div>
           ) : null}
         {this.state.currentProject === 2 ? (
